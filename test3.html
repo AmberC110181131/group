@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div class="container">
+        <h2>background color : <span class="color">#f15025</span></h2>
+        <button class="btn btn-hero" id="btn">click me</button>
+    </div>
 </body>
 </html>
 <style>
@@ -26,8 +29,8 @@
 </style>
 <script>
     const span=document.createElement("span");
-    span.innerHTML="Hi I am Amber.";
+    span.innerHTML="background color :"+color;
     span.className="span-text";
-    const rootApp=document.getElementById("app");
+    const rootApp=document.getElementById("container");
     rootApp.append(span);
 </script>
